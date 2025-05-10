@@ -44,6 +44,6 @@ class ProductsController < ApplicationController
   end
 
   def filtered_params
-    params.require(:product).permit(%i[name price description featured_image])
+    params.require(:product).permit(%i[name price description featured_image inventory_count])
   end
 end
